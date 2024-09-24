@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable solar panel installation services. Save on electricity with clean energy.">
+    <title>Solar Panel Installation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">INFINI-C SOLAR</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Switch to Solar Energy & Save</h1>
+        <p>Affordable solar panel installation for homes and businesses. Start saving on your energy bills today!</p>
+        <a href="#contact" class="cta-btn">Get a Free Quote</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are a team of experienced solar energy experts committed to providing affordable, efficient, and environmentally friendly energy solutions. With years of experience, we have helped thousands of customers reduce their energy costs and environmental impact.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-box">
+                <h3>Solar Panel Installation</h3>
+                <p>We provide full-service solar panel installation for residential and commercial properties, ensuring efficient and long-lasting solutions.</p>
+            </div>
+            <div class="service-box">
+                <h3>Solar Panel Maintenance</h3>
+                <p>Our maintenance services help keep your solar panels in top condition, ensuring optimal energy production year-round.</p>
+            </div>
+            <div class="service-box">
+                <h3>Energy Storage Solutions</h3>
+                <p>Store excess solar energy for later use with our advanced battery storage systems, increasing energy independence.</p>
+            </div>
+            <div class="service-box">
+                <h3>Solar Panel Sales (Without Installation)</h3>
+                <p>We offer high-quality solar panels for sale, allowing you to purchase and arrange installation independently or for off-grid projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Savings Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <h2>Solar Savings Calculator</h2>
+        <form id="calculator-form">
+            <label for="usage">Current Energy Usage (kWh per month):</label>
+            <input type="number" id="usage" name="usage" required>
+            
+            <label for="rate">Your Electricity Rate ($/kWh):</label>
+            <input type="number" id="rate" name="rate" required>
+            
+            <label for="sunlight">Estimated Hours of Sunlight per Day:</label>
+            <input type="number" id="sunlight" name="sunlight" required>
+            
+            <button type="button" onclick="calculateSavings()">Calculate Savings</button>
+        </form>
+        
+        <p id="result"></p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <article class="blog-post">
+            <h2>The Benefits of Solar Energy:</h3>
+            <p>Solar energy offers numerous benefits, starting with significantly reduced electricity bills. By generating your own power, you rely less on the grid, which can result in major savings over time. Additionally, solar energy is environmentally friendly, producing no harmful emissions and helping to reduce your carbon footprint. It also increases energy independence, allowing you to produce your own renewable energy, especially in remote areas. Plus, solar panels typically increase property values, making them a valuable investment for the future. </p>
+        </article>
+        <article class="blog-post">
+            <h2>How Solar Panels Work:</h3>
+            <p>Solar panels convert sunlight into electricity using photovoltaic (PV) cells. When sunlight hits these cells, it knocks electrons loose from their atoms, generating direct current (DC) electricity. This DC power is then converted into alternating current (AC) electricity by an inverter, which can be used to power homes and businesses. The process is clean, quiet, and highly efficient, allowing you to harness energy from the sun without creating pollution.</p>
+        </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/your-email" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Solar Energy Co. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
