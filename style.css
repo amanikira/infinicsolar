@@ -153,6 +153,13 @@ nav {
     background-color: #45a049;
 }
 
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
 /*blog*/
 
  /* Blog Section Styles */
