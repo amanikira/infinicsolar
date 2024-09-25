@@ -1,13 +1,38 @@
 // Calculator Script
+//calculator
 function calculateSavings() {
-    const usage = document.getElementById("usage").value;
-    const rate = document.getElementById("rate").value;
-    const sunlight = document.getElementById("sunlight").value;
+    // Get values from the input fields
+    let monthlyBill = document.getElementById('monthly-bill').value;
+    let systemSize = document.getElementById('solar-system-size').value;
+    let costPerWatt = document.getElementById('cost-per-watt').value;
 
-    if (usage && rate && sunlight) {
-        const monthlyCost = usage * rate;
+    // Check if all fields have values
+    if (monthlyBill === '' || systemSize === '' || costPerWatt === '') {
+        alert('Please fill out all fields.');
+        return;
     }
+
+    // Convert values to numbers
+    monthlyBill = parseFloat(monthlyBill);
+    systemSize = parseFloat(systemSize);
+    costPerWatt = parseFloat(costPerWatt);
+
+    // Calculate the installation cost
+    let installationCost = systemSize * 1000 * costPerWatt;
+
+    // Estimate savings based on current monthly bill (rough estimate for demonstration)
+    let annualSavings = monthlyBill * 12;
+    let paybackPeriod = installationCost / annualSavings;
+
+    // Display result
+    document.getElementById('result').innerHTML = `
+        Installation Cost: $${installationCost.toFixed(2)}<br>
+        Estimated Annual Savings: $${annualSavings.toFixed(2)}<br>
+        Payback Period: ${paybackPeriod.toFixed(1)} years
+    `;
 }
+
+//contact us form
 
 var form = document.getElementById("my-form");
 async function handleSubmit(event) {
