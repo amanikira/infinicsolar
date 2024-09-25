@@ -1,4 +1,4 @@
-// Calculator Script
+
 //calculator
 function calculateSavings() {
     // Get values from the input fields
@@ -32,8 +32,8 @@ function calculateSavings() {
     `;
 }
 
-//contact us form
 
+// contact form
 var form = document.getElementById("my-form");
 async function handleSubmit(event) {
 event.preventDefault();
